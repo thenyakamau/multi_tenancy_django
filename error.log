@@ -376,3 +376,15 @@ Traceback (most recent call last):
   File "/home/thenya/Documents/hris/lib/python3.8/site-packages/asgiref/local.py", line 96, in __del__
 NameError: name 'TypeError' is not defined
 [Fri Jul 16 07:48:51.853768 2021] [wsgi:error] [pid 18297:tid 140196499031808] [remote 127.0.0.1:41882] Not Found: /
+[Fri Jul 16 10:08:55.096208 2021] [wsgi:error] [pid 18297:tid 140196499031808] [remote 127.0.0.1:56706] Not Found: /
+[Fri Jul 16 10:08:55.334077 2021] [wsgi:error] [pid 18297:tid 140196381476608] [remote 127.0.0.1:56706] Not Found: /favicon.ico
+[Fri Jul 16 10:09:14.854087 2021] [wsgi:error] [pid 18297:tid 140196499031808] [remote 127.0.0.1:56792] Not Found: /
+Exception ignored in: <function BaseEventLoop.__del__ at 0x7f8202833160>
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/asyncio/base_events.py", line 654, in __del__
+NameError: name 'ResourceWarning' is not defined
+Exception ignored in: <function Local.__del__ at 0x7f82027aa940>
+Traceback (most recent call last):
+  File "/home/thenya/Documents/hris/lib/python3.8/site-packages/asgiref/local.py", line 96, in __del__
+NameError: name 'TypeError' is not defined
+[Fri Jul 16 10:09:47.283772 2021] [wsgi:error] [pid 28144:tid 140152875681536] [remote 127.0.0.1:56914] Not Found: /favicon.ico

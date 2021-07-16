@@ -154,4 +154,4 @@ STATIC_URL = '/static/'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-SHOW_PUBLIC_IF_NO_TENANT_FOUND = False
+SHOW_PUBLIC_IF_NO_TENANT_FOUND = True
