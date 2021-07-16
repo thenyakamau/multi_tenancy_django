@@ -20,18 +20,19 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-dqh_30r+f6jze$xf$^y+olbg$n_a9l9az46bveo5_6!c%!wldt'
+SECRET_KEY = ''
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['new.test', '.new.test']
+ALLOWED_HOSTS = ['demo.test', '.demo.test', '127.0.0.1']
 
 
 # Application definition
 
 SHARED_APPS = [
     'django_tenants',
+    'tenants',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -39,7 +40,6 @@ SHARED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'landlord',
-    'tenants',
 ]
 
 
@@ -50,7 +50,7 @@ TENANT_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'tenants'
+    'client'
 ]
 
 INSTALLED_APPS = list(SHARED_APPS) + [app for app in TENANT_APPS if app not in SHARED_APPS]
@@ -70,6 +70,7 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'multi_tenancy.urls'
+PUBLIC_SCHEMA_URLCONF = 'multi_tenancy.urls_public'
 
 TEMPLATES = [
     {
@@ -153,3 +154,4 @@ STATIC_URL = '/static/'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+SHOW_PUBLIC_IF_NO_TENANT_FOUND = False

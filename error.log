@@ -1,0 +1,378 @@
+[Thu Jul 15 15:03:12.933568 2021] [wsgi:error] [pid 6030:tid 139893731190528] [remote 127.0.0.1:47450] mod_wsgi (pid=6030): Failed to exec Python script file '/home/thenya/django_apps/multi_tenancy/multi_tenancy/wsgi.py'.
+[Thu Jul 15 15:03:12.933708 2021] [wsgi:error] [pid 6030:tid 139893731190528] [remote 127.0.0.1:47450] mod_wsgi (pid=6030): Exception occurred processing WSGI script '/home/thenya/django_apps/multi_tenancy/multi_tenancy/wsgi.py'.
+[Thu Jul 15 15:03:12.934573 2021] [wsgi:error] [pid 6030:tid 139893731190528] [remote 127.0.0.1:47450] Traceback (most recent call last):
+[Thu Jul 15 15:03:12.934677 2021] [wsgi:error] [pid 6030:tid 139893731190528] [remote 127.0.0.1:47450]   File "/home/thenya/django_apps/multi_tenancy/multi_tenancy/wsgi.py", line 16, in <module>
+[Thu Jul 15 15:03:12.934692 2021] [wsgi:error] [pid 6030:tid 139893731190528] [remote 127.0.0.1:47450]     application = get_wsgi_application()
+[Thu Jul 15 15:03:12.934708 2021] [wsgi:error] [pid 6030:tid 139893731190528] [remote 127.0.0.1:47450]   File "/home/thenya/Documents/hris/lib/python3.8/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+[Thu Jul 15 15:03:12.934716 2021] [wsgi:error] [pid 6030:tid 139893731190528] [remote 127.0.0.1:47450]     django.setup(set_prefix=False)
+[Thu Jul 15 15:03:12.934729 2021] [wsgi:error] [pid 6030:tid 139893731190528] [remote 127.0.0.1:47450]   File "/home/thenya/Documents/hris/lib/python3.8/site-packages/django/__init__.py", line 19, in setup
+[Thu Jul 15 15:03:12.934737 2021] [wsgi:error] [pid 6030:tid 139893731190528] [remote 127.0.0.1:47450]     configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+[Thu Jul 15 15:03:12.934749 2021] [wsgi:error] [pid 6030:tid 139893731190528] [remote 127.0.0.1:47450]   File "/home/thenya/Documents/hris/lib/python3.8/site-packages/django/conf/__init__.py", line 82, in __getattr__
+[Thu Jul 15 15:03:12.934756 2021] [wsgi:error] [pid 6030:tid 139893731190528] [remote 127.0.0.1:47450]     self._setup(name)
+[Thu Jul 15 15:03:12.934768 2021] [wsgi:error] [pid 6030:tid 139893731190528] [remote 127.0.0.1:47450]   File "/home/thenya/Documents/hris/lib/python3.8/site-packages/django/conf/__init__.py", line 69, in _setup
+[Thu Jul 15 15:03:12.934774 2021] [wsgi:error] [pid 6030:tid 139893731190528] [remote 127.0.0.1:47450]     self._wrapped = Settings(settings_module)
+[Thu Jul 15 15:03:12.934786 2021] [wsgi:error] [pid 6030:tid 139893731190528] [remote 127.0.0.1:47450]   File "/home/thenya/Documents/hris/lib/python3.8/site-packages/django/conf/__init__.py", line 170, in __init__
+[Thu Jul 15 15:03:12.934793 2021] [wsgi:error] [pid 6030:tid 139893731190528] [remote 127.0.0.1:47450]     mod = importlib.import_module(self.SETTINGS_MODULE)
+[Thu Jul 15 15:03:12.934804 2021] [wsgi:error] [pid 6030:tid 139893731190528] [remote 127.0.0.1:47450]   File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+[Thu Jul 15 15:03:12.934811 2021] [wsgi:error] [pid 6030:tid 139893731190528] [remote 127.0.0.1:47450]     return _bootstrap._gcd_import(name[level:], package, level)
+[Thu Jul 15 15:03:12.934822 2021] [wsgi:error] [pid 6030:tid 139893731190528] [remote 127.0.0.1:47450]   File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+[Thu Jul 15 15:03:12.934835 2021] [wsgi:error] [pid 6030:tid 139893731190528] [remote 127.0.0.1:47450]   File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+[Thu Jul 15 15:03:12.934847 2021] [wsgi:error] [pid 6030:tid 139893731190528] [remote 127.0.0.1:47450]   File "<frozen importlib._bootstrap>", line 961, in _find_and_load_unlocked
+[Thu Jul 15 15:03:12.934860 2021] [wsgi:error] [pid 6030:tid 139893731190528] [remote 127.0.0.1:47450]   File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+[Thu Jul 15 15:03:12.934874 2021] [wsgi:error] [pid 6030:tid 139893731190528] [remote 127.0.0.1:47450]   File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+[Thu Jul 15 15:03:12.934892 2021] [wsgi:error] [pid 6030:tid 139893731190528] [remote 127.0.0.1:47450]   File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+[Thu Jul 15 15:03:12.934933 2021] [wsgi:error] [pid 6030:tid 139893731190528] [remote 127.0.0.1:47450]   File "<frozen importlib._bootstrap>", line 973, in _find_and_load_unlocked
+[Thu Jul 15 15:03:12.934963 2021] [wsgi:error] [pid 6030:tid 139893731190528] [remote 127.0.0.1:47450] ModuleNotFoundError: No module named 'multi_tenancy'
+[Thu Jul 15 12:08:07.197294 2021] [wsgi:error] [pid 6425:tid 139991989671680] [remote 127.0.0.1:47742] Not Found: /
+[Thu Jul 15 12:08:58.857804 2021] [wsgi:error] [pid 6425:tid 139991897351936] [remote 127.0.0.1:47790] Not Found: /
+[Thu Jul 15 12:08:58.972648 2021] [wsgi:error] [pid 6425:tid 139991989671680] [remote 127.0.0.1:47790] Not Found: /favicon.ico
+[Thu Jul 15 12:09:03.540544 2021] [wsgi:error] [pid 6425:tid 139991897351936] [remote 127.0.0.1:47790] Not Found: /
+[Thu Jul 15 12:10:14.885784 2021] [wsgi:error] [pid 6425:tid 139991989671680] [remote 127.0.0.1:47860] Not Found: /
+[Thu Jul 15 12:10:16.269049 2021] [wsgi:error] [pid 6425:tid 139991897351936] [remote 127.0.0.1:47860] Not Found: /
+[Thu Jul 15 12:10:17.170554 2021] [wsgi:error] [pid 6425:tid 139991989671680] [remote 127.0.0.1:47860] Not Found: /
+[Thu Jul 15 12:10:54.071681 2021] [wsgi:error] [pid 6425:tid 139991897351936] [remote 127.0.0.1:47904] Not Found: /
+[Thu Jul 15 12:10:54.210474 2021] [wsgi:error] [pid 6425:tid 139991989671680] [remote 127.0.0.1:47904] Not Found: /favicon.ico
+[Thu Jul 15 12:13:02.732539 2021] [wsgi:error] [pid 6425:tid 139991897351936] [remote 127.0.0.1:48034] Not Found: /
+[Thu Jul 15 12:13:36.322586 2021] [wsgi:error] [pid 6425:tid 139991989671680] [remote 127.0.0.1:48064] Not Found: /
+[Thu Jul 15 12:13:36.471667 2021] [wsgi:error] [pid 6425:tid 139991897351936] [remote 127.0.0.1:48064] Not Found: /favicon.ico
+[Thu Jul 15 12:16:46.955190 2021] [wsgi:error] [pid 6425:tid 139991989671680] [remote 127.0.0.1:49214] Not Found: /dashboard/images/xampp-logo.svg
+[Thu Jul 15 12:16:46.960900 2021] [wsgi:error] [pid 6425:tid 139991897351936] [remote 127.0.0.1:49216] Not Found: /dashboard/images/bitnami-xampp.png
+[Thu Jul 15 12:16:46.967062 2021] [wsgi:error] [pid 6425:tid 139991880558336] [remote 127.0.0.1:49220] Not Found: /dashboard/javascripts/all.js
+[Thu Jul 15 12:16:47.093995 2021] [wsgi:error] [pid 6425:tid 139991888959232] [remote 127.0.0.1:49230] Not Found: /dashboard/images/social-icons.png
+Exception ignored in: <function BaseEventLoop.__del__ at 0x7f5264cea160>
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/asyncio/base_events.py", line 654, in __del__
+NameError: name 'ResourceWarning' is not defined
+Exception ignored in: <function Local.__del__ at 0x7f5264c60940>
+Traceback (most recent call last):
+  File "/home/thenya/Documents/hris/lib/python3.8/site-packages/asgiref/local.py", line 96, in __del__
+NameError: name 'TypeError' is not defined
+[Thu Jul 15 12:18:05.958165 2021] [wsgi:error] [pid 7625:tid 140484797007616] [remote 127.0.0.1:49304] Not Found: /
+[Thu Jul 15 12:18:06.087383 2021] [wsgi:error] [pid 7625:tid 140484679493376] [remote 127.0.0.1:49304] Not Found: /favicon.ico
+Exception ignored in: <function BaseEventLoop.__del__ at 0x7fc52269d160>
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/asyncio/base_events.py", line 654, in __del__
+NameError: name 'ResourceWarning' is not defined
+Exception ignored in: <function Local.__del__ at 0x7fc522613940>
+Traceback (most recent call last):
+  File "/home/thenya/Documents/hris/lib/python3.8/site-packages/asgiref/local.py", line 96, in __del__
+NameError: name 'TypeError' is not defined
+[Thu Jul 15 12:33:52.206301 2021] [wsgi:error] [pid 7835:tid 140142815962880] [remote 127.0.0.1:50864] Not Found: /
+[Thu Jul 15 12:33:52.342328 2021] [wsgi:error] [pid 7835:tid 140142698407680] [remote 127.0.0.1:50864] Not Found: /favicon.ico
+[Thu Jul 15 12:34:12.830738 2021] [wsgi:error] [pid 7835:tid 140142815962880] [remote 127.0.0.1:50942] Not Found: /
+[Thu Jul 15 12:34:32.255243 2021] [wsgi:error] [pid 7835:tid 140142698407680] [remote 127.0.0.1:50964] Not Found: /
+[Thu Jul 15 12:34:32.392505 2021] [wsgi:error] [pid 7835:tid 140142815962880] [remote 127.0.0.1:50964] Not Found: /favicon.ico
+Exception ignored in: <function BaseEventLoop.__del__ at 0x7f7582c09160>
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/asyncio/base_events.py", line 654, in __del__
+NameError: name 'ResourceWarning' is not defined
+Exception ignored in: <function Local.__del__ at 0x7f7582b7f940>
+Traceback (most recent call last):
+  File "/home/thenya/Documents/hris/lib/python3.8/site-packages/asgiref/local.py", line 96, in __del__
+NameError: name 'TypeError' is not defined
+[Thu Jul 15 12:38:24.876638 2021] [wsgi:error] [pid 9664:tid 140558508615424] [remote 127.0.0.1:51202] Invalid HTTP_HOST header: 'jake.test'. You may need to add 'jake.test' to ALLOWED_HOSTS.
+[Thu Jul 15 12:38:24.921999 2021] [wsgi:error] [pid 9664:tid 140558508615424] [remote 127.0.0.1:51202] Bad Request: /
+[Thu Jul 15 12:38:25.053648 2021] [wsgi:error] [pid 9664:tid 140558449866496] [remote 127.0.0.1:51204] Invalid HTTP_HOST header: 'jake.test'. You may need to add 'jake.test' to ALLOWED_HOSTS.
+[Thu Jul 15 12:38:25.121557 2021] [wsgi:error] [pid 9664:tid 140558449866496] [remote 127.0.0.1:51204] Bad Request: /favicon.ico
+[Thu Jul 15 12:38:39.869192 2021] [wsgi:error] [pid 9664:tid 140558508615424] [remote 127.0.0.1:51256] Invalid HTTP_HOST header: 'jake.test'. You may need to add 'jake.test' to ALLOWED_HOSTS.
+[Thu Jul 15 12:38:39.911760 2021] [wsgi:error] [pid 9664:tid 140558508615424] [remote 127.0.0.1:51256] Bad Request: /
+[Thu Jul 15 12:38:53.779159 2021] [wsgi:error] [pid 9664:tid 140558449866496] [remote 127.0.0.1:51318] Invalid HTTP_HOST header: 'jake.test'. You may need to add 'jake.test' to ALLOWED_HOSTS.
+[Thu Jul 15 12:38:53.824455 2021] [wsgi:error] [pid 9664:tid 140558449866496] [remote 127.0.0.1:51318] Bad Request: /
+Exception ignored in: <function Local.__del__ at 0x7fd647ece940>
+Traceback (most recent call last):
+  File "/home/thenya/Documents/hris/lib/python3.8/site-packages/asgiref/local.py", line 96, in __del__
+NameError: name 'TypeError' is not defined
+Exception ignored in: <function Local.__del__ at 0x7fd647ece940>
+Traceback (most recent call last):
+  File "/home/thenya/Documents/hris/lib/python3.8/site-packages/asgiref/local.py", line 96, in __del__
+NameError: name 'TypeError' is not defined
+[Thu Jul 15 12:39:04.756238 2021] [wsgi:error] [pid 10011:tid 140496541230848] [remote 127.0.0.1:51332] Not Found: /
+[Thu Jul 15 12:39:39.378666 2021] [wsgi:error] [pid 10011:tid 140496423716608] [remote 127.0.0.1:51366] Not Found: /
+[Thu Jul 15 12:39:39.481751 2021] [wsgi:error] [pid 10011:tid 140496541230848] [remote 127.0.0.1:51366] Not Found: /favicon.ico
+[Thu Jul 15 12:39:48.288076 2021] [wsgi:error] [pid 10011:tid 140496423716608] [remote 127.0.0.1:51398] Not Found: /
+Exception ignored in: <function BaseEventLoop.__del__ at 0x7fc7de6c7160>
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/asyncio/base_events.py", line 654, in __del__
+NameError: name 'ResourceWarning' is not defined
+Exception ignored in: <function Local.__del__ at 0x7fc7de63d940>
+Traceback (most recent call last):
+  File "/home/thenya/Documents/hris/lib/python3.8/site-packages/asgiref/local.py", line 96, in __del__
+NameError: name 'TypeError' is not defined
+[Thu Jul 15 12:41:24.703107 2021] [wsgi:error] [pid 10339:tid 140537402615552] [remote 127.0.0.1:51556] Not Found: /
+[Thu Jul 15 12:41:24.823728 2021] [wsgi:error] [pid 10339:tid 140537285101312] [remote 127.0.0.1:51556] Not Found: /favicon.ico
+Exception ignored in: <function BaseEventLoop.__del__ at 0x7fd161f3b160>
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/asyncio/base_events.py", line 654, in __del__
+NameError: name 'ResourceWarning' is not defined
+Exception ignored in: <function Local.__del__ at 0x7fd161eb2940>
+Traceback (most recent call last):
+  File "/home/thenya/Documents/hris/lib/python3.8/site-packages/asgiref/local.py", line 96, in __del__
+NameError: name 'TypeError' is not defined
+[Thu Jul 15 12:42:05.612564 2021] [wsgi:error] [pid 10582:tid 139867718481664] [remote 127.0.0.1:51598] Invalid HTTP_HOST header: 'vic.test'. You may need to add 'vic.test' to ALLOWED_HOSTS.
+[Thu Jul 15 12:42:05.661655 2021] [wsgi:error] [pid 10582:tid 139867718481664] [remote 127.0.0.1:51598] Bad Request: /
+[Thu Jul 15 12:42:05.777995 2021] [wsgi:error] [pid 10582:tid 139867600967424] [remote 127.0.0.1:51600] Invalid HTTP_HOST header: 'vic.test'. You may need to add 'vic.test' to ALLOWED_HOSTS.
+[Thu Jul 15 12:42:05.839414 2021] [wsgi:error] [pid 10582:tid 139867600967424] [remote 127.0.0.1:51600] Bad Request: /favicon.ico
+[Thu Jul 15 12:42:21.655549 2021] [wsgi:error] [pid 10582:tid 139867718481664] [remote 127.0.0.1:51648] Invalid HTTP_HOST header: 'vic.test'. You may need to add 'vic.test' to ALLOWED_HOSTS.
+[Thu Jul 15 12:42:21.694942 2021] [wsgi:error] [pid 10582:tid 139867718481664] [remote 127.0.0.1:51648] Bad Request: /
+Exception ignored in: <function Local.__del__ at 0x7f3575a23940>
+Traceback (most recent call last):
+  File "/home/thenya/Documents/hris/lib/python3.8/site-packages/asgiref/local.py", line 96, in __del__
+NameError: name 'TypeError' is not defined
+Exception ignored in: <function Local.__del__ at 0x7f3575a23940>
+Traceback (most recent call last):
+  File "/home/thenya/Documents/hris/lib/python3.8/site-packages/asgiref/local.py", line 96, in __del__
+NameError: name 'TypeError' is not defined
+[Thu Jul 15 12:42:43.000514 2021] [wsgi:error] [pid 10801:tid 139769490380544] [remote 127.0.0.1:51684] Not Found: /
+[Thu Jul 15 12:42:43.143452 2021] [wsgi:error] [pid 10801:tid 139769607894784] [remote 127.0.0.1:51684] Not Found: /favicon.ico
+[Thu Jul 15 12:42:46.630797 2021] [wsgi:error] [pid 10801:tid 139769607894784] [remote 127.0.0.1:51690] Not Found: /favicon.ico
+[Thu Jul 15 12:43:42.149002 2021] [wsgi:error] [pid 10801:tid 139769607894784] [remote 127.0.0.1:51756] Not Found: /
+[Thu Jul 15 12:46:38.981506 2021] [wsgi:error] [pid 10801:tid 139769607894784] [remote 127.0.0.1:51978] Not Found: /
+[Thu Jul 15 12:53:50.089096 2021] [wsgi:error] [pid 10801:tid 139769607894784] [remote 127.0.0.1:52818] Not Found: /favicon.ico
+[Thu Jul 15 13:45:18.433496 2021] [wsgi:error] [pid 10801:tid 139769490380544] [remote 127.0.0.1:56278] Not Found: /favicon.ico
+Exception ignored in: <function BaseEventLoop.__del__ at 0x7f1e9dd20160>
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/asyncio/base_events.py", line 654, in __del__
+NameError: name 'ResourceWarning' is not defined
+Exception ignored in: <function Local.__del__ at 0x7f1e9dc96940>
+Traceback (most recent call last):
+  File "/home/thenya/Documents/hris/lib/python3.8/site-packages/asgiref/local.py", line 96, in __del__
+NameError: name 'TypeError' is not defined
+[Fri Jul 16 06:14:16.342677 2021] [wsgi:error] [pid 1052:tid 140538760423168] [remote 127.0.0.1:50556] Not Found: /favicon.ico
+Exception ignored in: <function BaseEventLoop.__del__ at 0x7fd1b5e29160>
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/asyncio/base_events.py", line 654, in __del__
+NameError: name 'ResourceWarning' is not defined
+Exception ignored in: <function Local.__del__ at 0x7fd1b5d9f940>
+Traceback (most recent call last):
+  File "/home/thenya/Documents/hris/lib/python3.8/site-packages/asgiref/local.py", line 96, in __del__
+NameError: name 'TypeError' is not defined
+Exception ignored in: <function BaseEventLoop.__del__ at 0x7f90c077f160>
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/asyncio/base_events.py", line 654, in __del__
+NameError: name 'ResourceWarning' is not defined
+Exception ignored in: <function Local.__del__ at 0x7f90c06f5940>
+Traceback (most recent call last):
+  File "/home/thenya/Documents/hris/lib/python3.8/site-packages/asgiref/local.py", line 96, in __del__
+NameError: name 'TypeError' is not defined
+[Fri Jul 16 06:30:47.811249 2021] [wsgi:error] [pid 6309:tid 140336370747136] [remote 127.0.0.1:54666] Invalid HTTP_HOST header: 'demo.test'. You may need to add 'demo.test' to ALLOWED_HOSTS.
+[Fri Jul 16 06:30:47.861627 2021] [wsgi:error] [pid 6309:tid 140336370747136] [remote 127.0.0.1:54666] Bad Request: /
+[Fri Jul 16 06:31:52.660116 2021] [wsgi:error] [pid 6309:tid 140336253191936] [remote 127.0.0.1:54848] Invalid HTTP_HOST header: 'demo.test'. You may need to add 'demo.test' to ALLOWED_HOSTS.
+[Fri Jul 16 06:31:52.745935 2021] [wsgi:error] [pid 6309:tid 140336253191936] [remote 127.0.0.1:54848] Bad Request: /
+[Fri Jul 16 06:31:53.648233 2021] [wsgi:error] [pid 6309:tid 140336370747136] [remote 127.0.0.1:54850] Invalid HTTP_HOST header: 'demo.test'. You may need to add 'demo.test' to ALLOWED_HOSTS.
+[Fri Jul 16 06:31:53.675951 2021] [wsgi:error] [pid 6309:tid 140336370747136] [remote 127.0.0.1:54850] Bad Request: /
+Exception ignored in: <function Local.__del__ at 0x7fa28f7ad940>
+Traceback (most recent call last):
+  File "/home/thenya/Documents/hris/lib/python3.8/site-packages/asgiref/local.py", line 96, in __del__
+NameError: name 'TypeError' is not defined
+Exception ignored in: <function Local.__del__ at 0x7fa28f7ad940>
+Traceback (most recent call last):
+  File "/home/thenya/Documents/hris/lib/python3.8/site-packages/asgiref/local.py", line 96, in __del__
+NameError: name 'TypeError' is not defined
+[Fri Jul 16 06:32:02.350257 2021] [wsgi:error] [pid 6934:tid 140320855631616] [remote 127.0.0.1:54864] Not Found: /
+[Fri Jul 16 06:33:33.733048 2021] [wsgi:error] [pid 6934:tid 140320738076416] [remote 127.0.0.1:55012] Not Found: /
+[Fri Jul 16 06:33:35.196871 2021] [wsgi:error] [pid 6934:tid 140320855631616] [remote 127.0.0.1:55012] Not Found: /
+Exception ignored in: <function BaseEventLoop.__del__ at 0x7f9ef6be5160>
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/asyncio/base_events.py", line 654, in __del__
+NameError: name 'ResourceWarning' is not defined
+Exception ignored in: <function Local.__del__ at 0x7f9ef6b5c940>
+Traceback (most recent call last):
+  File "/home/thenya/Documents/hris/lib/python3.8/site-packages/asgiref/local.py", line 96, in __del__
+NameError: name 'TypeError' is not defined
+[Fri Jul 16 06:34:01.276571 2021] [wsgi:error] [pid 7274:tid 139691145332480] [remote 127.0.0.1:55050] Not Found: /
+[Fri Jul 16 06:34:02.348837 2021] [wsgi:error] [pid 7274:tid 139691027777280] [remote 127.0.0.1:55050] Not Found: /
+[Fri Jul 16 06:34:03.511259 2021] [wsgi:error] [pid 7274:tid 139691145332480] [remote 127.0.0.1:55050] Not Found: /
+[Fri Jul 16 06:34:05.363051 2021] [wsgi:error] [pid 7274:tid 139691027777280] [remote 127.0.0.1:55050] Not Found: /
+Exception ignored in: <function BaseEventLoop.__del__ at 0x7f0c5915b160>
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/asyncio/base_events.py", line 654, in __del__
+NameError: name 'ResourceWarning' is not defined
+Exception ignored in: <function Local.__del__ at 0x7f0c590d1940>
+Traceback (most recent call last):
+  File "/home/thenya/Documents/hris/lib/python3.8/site-packages/asgiref/local.py", line 96, in __del__
+NameError: name 'TypeError' is not defined
+[Fri Jul 16 06:34:26.802372 2021] [wsgi:error] [pid 7577:tid 139963598092032] [remote 127.0.0.1:55090] Not Found: /
+[Fri Jul 16 06:34:28.738722 2021] [wsgi:error] [pid 7577:tid 139963480577792] [remote 127.0.0.1:55090] Not Found: /
+[Fri Jul 16 06:36:59.700619 2021] [wsgi:error] [pid 7577:tid 139963598092032] [remote 127.0.0.1:55294] Not Found: /
+[Fri Jul 16 06:36:59.791854 2021] [wsgi:error] [pid 7577:tid 139963480577792] [remote 127.0.0.1:55302] Not Found: /favicon.ico
+Exception ignored in: <function BaseEventLoop.__del__ at 0x7f4bc8898160>
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/asyncio/base_events.py", line 654, in __del__
+NameError: name 'ResourceWarning' is not defined
+Exception ignored in: <function Local.__del__ at 0x7f4bc880e940>
+Traceback (most recent call last):
+  File "/home/thenya/Documents/hris/lib/python3.8/site-packages/asgiref/local.py", line 96, in __del__
+NameError: name 'TypeError' is not defined
+[Fri Jul 16 06:37:12.079178 2021] [wsgi:error] [pid 8129:tid 140268074702592] [remote 127.0.0.1:55316] Not Found: /
+[Fri Jul 16 07:25:27.356333 2021] [wsgi:error] [pid 8129:tid 140267957188352] [remote 127.0.0.1:36450] Not Found: /
+[Fri Jul 16 07:25:27.456754 2021] [wsgi:error] [pid 8129:tid 140268074702592] [remote 127.0.0.1:36450] Not Found: /favicon.ico
+[Fri Jul 16 07:25:30.345428 2021] [wsgi:error] [pid 8129:tid 140267957188352] [remote 127.0.0.1:36466] Not Found: /
+[Fri Jul 16 07:25:30.425412 2021] [wsgi:error] [pid 8129:tid 140268074702592] [remote 127.0.0.1:36466] Not Found: /favicon.ico
+Exception ignored in: <function BaseEventLoop.__del__ at 0x7f92acc1e160>
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/asyncio/base_events.py", line 654, in __del__
+NameError: name 'ResourceWarning' is not defined
+Exception ignored in: <function Local.__del__ at 0x7f92acb95940>
+Traceback (most recent call last):
+  File "/home/thenya/Documents/hris/lib/python3.8/site-packages/asgiref/local.py", line 96, in __del__
+NameError: name 'TypeError' is not defined
+[Fri Jul 16 07:26:01.374979 2021] [wsgi:error] [pid 13914:tid 140611950257920] [remote 127.0.0.1:36556] mod_wsgi (pid=13914): Failed to exec Python script file '/home/thenya/django_apps/multi_tenancy/multi_tenancy/wsgi.py'.
+[Fri Jul 16 07:26:01.375038 2021] [wsgi:error] [pid 13914:tid 140611950257920] [remote 127.0.0.1:36556] mod_wsgi (pid=13914): Exception occurred processing WSGI script '/home/thenya/django_apps/multi_tenancy/multi_tenancy/wsgi.py'.
+[Fri Jul 16 07:26:01.377159 2021] [wsgi:error] [pid 13914:tid 140611950257920] [remote 127.0.0.1:36556] Traceback (most recent call last):
+[Fri Jul 16 07:26:01.377225 2021] [wsgi:error] [pid 13914:tid 140611950257920] [remote 127.0.0.1:36556]   File "/home/thenya/django_apps/multi_tenancy/multi_tenancy/wsgi.py", line 16, in <module>
+[Fri Jul 16 07:26:01.377232 2021] [wsgi:error] [pid 13914:tid 140611950257920] [remote 127.0.0.1:36556]     application = get_wsgi_application()
+[Fri Jul 16 07:26:01.377240 2021] [wsgi:error] [pid 13914:tid 140611950257920] [remote 127.0.0.1:36556]   File "/home/thenya/Documents/hris/lib/python3.8/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+[Fri Jul 16 07:26:01.377244 2021] [wsgi:error] [pid 13914:tid 140611950257920] [remote 127.0.0.1:36556]     django.setup(set_prefix=False)
+[Fri Jul 16 07:26:01.377250 2021] [wsgi:error] [pid 13914:tid 140611950257920] [remote 127.0.0.1:36556]   File "/home/thenya/Documents/hris/lib/python3.8/site-packages/django/__init__.py", line 24, in setup
+[Fri Jul 16 07:26:01.377254 2021] [wsgi:error] [pid 13914:tid 140611950257920] [remote 127.0.0.1:36556]     apps.populate(settings.INSTALLED_APPS)
+[Fri Jul 16 07:26:01.377261 2021] [wsgi:error] [pid 13914:tid 140611950257920] [remote 127.0.0.1:36556]   File "/home/thenya/Documents/hris/lib/python3.8/site-packages/django/apps/registry.py", line 122, in populate
+[Fri Jul 16 07:26:01.377267 2021] [wsgi:error] [pid 13914:tid 140611950257920] [remote 127.0.0.1:36556]     app_config.ready()
+[Fri Jul 16 07:26:01.377275 2021] [wsgi:error] [pid 13914:tid 140611950257920] [remote 127.0.0.1:36556]   File "/home/thenya/Documents/hris/lib/python3.8/site-packages/django/contrib/admin/apps.py", line 27, in ready
+[Fri Jul 16 07:26:01.377279 2021] [wsgi:error] [pid 13914:tid 140611950257920] [remote 127.0.0.1:36556]     self.module.autodiscover()
+[Fri Jul 16 07:26:01.377286 2021] [wsgi:error] [pid 13914:tid 140611950257920] [remote 127.0.0.1:36556]   File "/home/thenya/Documents/hris/lib/python3.8/site-packages/django/contrib/admin/__init__.py", line 24, in autodiscover
+[Fri Jul 16 07:26:01.377290 2021] [wsgi:error] [pid 13914:tid 140611950257920] [remote 127.0.0.1:36556]     autodiscover_modules('admin', register_to=site)
+[Fri Jul 16 07:26:01.377296 2021] [wsgi:error] [pid 13914:tid 140611950257920] [remote 127.0.0.1:36556]   File "/home/thenya/Documents/hris/lib/python3.8/site-packages/django/utils/module_loading.py", line 47, in autodiscover_modules
+[Fri Jul 16 07:26:01.377300 2021] [wsgi:error] [pid 13914:tid 140611950257920] [remote 127.0.0.1:36556]     import_module('%s.%s' % (app_config.name, module_to_search))
+[Fri Jul 16 07:26:01.377307 2021] [wsgi:error] [pid 13914:tid 140611950257920] [remote 127.0.0.1:36556]   File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+[Fri Jul 16 07:26:01.377311 2021] [wsgi:error] [pid 13914:tid 140611950257920] [remote 127.0.0.1:36556]     return _bootstrap._gcd_import(name[level:], package, level)
+[Fri Jul 16 07:26:01.377338 2021] [wsgi:error] [pid 13914:tid 140611950257920] [remote 127.0.0.1:36556]   File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+[Fri Jul 16 07:26:01.377351 2021] [wsgi:error] [pid 13914:tid 140611950257920] [remote 127.0.0.1:36556]   File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+[Fri Jul 16 07:26:01.377363 2021] [wsgi:error] [pid 13914:tid 140611950257920] [remote 127.0.0.1:36556]   File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+[Fri Jul 16 07:26:01.377373 2021] [wsgi:error] [pid 13914:tid 140611950257920] [remote 127.0.0.1:36556]   File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+[Fri Jul 16 07:26:01.377383 2021] [wsgi:error] [pid 13914:tid 140611950257920] [remote 127.0.0.1:36556]   File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+[Fri Jul 16 07:26:01.377394 2021] [wsgi:error] [pid 13914:tid 140611950257920] [remote 127.0.0.1:36556]   File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+[Fri Jul 16 07:26:01.377403 2021] [wsgi:error] [pid 13914:tid 140611950257920] [remote 127.0.0.1:36556]   File "/home/thenya/django_apps/multi_tenancy/landlord/admin.py", line 5, in <module>
+[Fri Jul 16 07:26:01.377406 2021] [wsgi:error] [pid 13914:tid 140611950257920] [remote 127.0.0.1:36556]     admin.sites.register(LandLord)
+[Fri Jul 16 07:26:01.377422 2021] [wsgi:error] [pid 13914:tid 140611950257920] [remote 127.0.0.1:36556] AttributeError: module 'django.contrib.admin.sites' has no attribute 'register'
+[Fri Jul 16 07:26:19.221702 2021] [wsgi:error] [pid 13914:tid 140611832743680] [remote 127.0.0.1:36608] mod_wsgi (pid=13914): Failed to exec Python script file '/home/thenya/django_apps/multi_tenancy/multi_tenancy/wsgi.py'.
+[Fri Jul 16 07:26:19.221889 2021] [wsgi:error] [pid 13914:tid 140611832743680] [remote 127.0.0.1:36608] mod_wsgi (pid=13914): Exception occurred processing WSGI script '/home/thenya/django_apps/multi_tenancy/multi_tenancy/wsgi.py'.
+[Fri Jul 16 07:26:19.222234 2021] [wsgi:error] [pid 13914:tid 140611832743680] [remote 127.0.0.1:36608] Traceback (most recent call last):
+[Fri Jul 16 07:26:19.222354 2021] [wsgi:error] [pid 13914:tid 140611832743680] [remote 127.0.0.1:36608]   File "/home/thenya/django_apps/multi_tenancy/multi_tenancy/wsgi.py", line 16, in <module>
+[Fri Jul 16 07:26:19.222376 2021] [wsgi:error] [pid 13914:tid 140611832743680] [remote 127.0.0.1:36608]     application = get_wsgi_application()
+[Fri Jul 16 07:26:19.222403 2021] [wsgi:error] [pid 13914:tid 140611832743680] [remote 127.0.0.1:36608]   File "/home/thenya/Documents/hris/lib/python3.8/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+[Fri Jul 16 07:26:19.222416 2021] [wsgi:error] [pid 13914:tid 140611832743680] [remote 127.0.0.1:36608]     django.setup(set_prefix=False)
+[Fri Jul 16 07:26:19.222437 2021] [wsgi:error] [pid 13914:tid 140611832743680] [remote 127.0.0.1:36608]   File "/home/thenya/Documents/hris/lib/python3.8/site-packages/django/__init__.py", line 24, in setup
+[Fri Jul 16 07:26:19.222449 2021] [wsgi:error] [pid 13914:tid 140611832743680] [remote 127.0.0.1:36608]     apps.populate(settings.INSTALLED_APPS)
+[Fri Jul 16 07:26:19.222471 2021] [wsgi:error] [pid 13914:tid 140611832743680] [remote 127.0.0.1:36608]   File "/home/thenya/Documents/hris/lib/python3.8/site-packages/django/apps/registry.py", line 83, in populate
+[Fri Jul 16 07:26:19.222482 2021] [wsgi:error] [pid 13914:tid 140611832743680] [remote 127.0.0.1:36608]     raise RuntimeError("populate() isn't reentrant")
+[Fri Jul 16 07:26:19.222532 2021] [wsgi:error] [pid 13914:tid 140611832743680] [remote 127.0.0.1:36608] RuntimeError: populate() isn't reentrant
+[Fri Jul 16 07:26:33.872643 2021] [wsgi:error] [pid 13914:tid 140611950257920] [remote 127.0.0.1:36652] mod_wsgi (pid=13914): Failed to exec Python script file '/home/thenya/django_apps/multi_tenancy/multi_tenancy/wsgi.py'.
+[Fri Jul 16 07:26:33.873306 2021] [wsgi:error] [pid 13914:tid 140611950257920] [remote 127.0.0.1:36652] mod_wsgi (pid=13914): Exception occurred processing WSGI script '/home/thenya/django_apps/multi_tenancy/multi_tenancy/wsgi.py'.
+[Fri Jul 16 07:26:33.873544 2021] [wsgi:error] [pid 13914:tid 140611950257920] [remote 127.0.0.1:36652] Traceback (most recent call last):
+[Fri Jul 16 07:26:33.873617 2021] [wsgi:error] [pid 13914:tid 140611950257920] [remote 127.0.0.1:36652]   File "/home/thenya/django_apps/multi_tenancy/multi_tenancy/wsgi.py", line 16, in <module>
+[Fri Jul 16 07:26:33.873629 2021] [wsgi:error] [pid 13914:tid 140611950257920] [remote 127.0.0.1:36652]     application = get_wsgi_application()
+[Fri Jul 16 07:26:33.873647 2021] [wsgi:error] [pid 13914:tid 140611950257920] [remote 127.0.0.1:36652]   File "/home/thenya/Documents/hris/lib/python3.8/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+[Fri Jul 16 07:26:33.873656 2021] [wsgi:error] [pid 13914:tid 140611950257920] [remote 127.0.0.1:36652]     django.setup(set_prefix=False)
+[Fri Jul 16 07:26:33.873672 2021] [wsgi:error] [pid 13914:tid 140611950257920] [remote 127.0.0.1:36652]   File "/home/thenya/Documents/hris/lib/python3.8/site-packages/django/__init__.py", line 24, in setup
+[Fri Jul 16 07:26:33.873681 2021] [wsgi:error] [pid 13914:tid 140611950257920] [remote 127.0.0.1:36652]     apps.populate(settings.INSTALLED_APPS)
+[Fri Jul 16 07:26:33.873696 2021] [wsgi:error] [pid 13914:tid 140611950257920] [remote 127.0.0.1:36652]   File "/home/thenya/Documents/hris/lib/python3.8/site-packages/django/apps/registry.py", line 83, in populate
+[Fri Jul 16 07:26:33.873706 2021] [wsgi:error] [pid 13914:tid 140611950257920] [remote 127.0.0.1:36652]     raise RuntimeError("populate() isn't reentrant")
+[Fri Jul 16 07:26:33.873737 2021] [wsgi:error] [pid 13914:tid 140611950257920] [remote 127.0.0.1:36652] RuntimeError: populate() isn't reentrant
+[Fri Jul 16 07:26:40.856807 2021] [wsgi:error] [pid 13914:tid 140611832743680] [remote 127.0.0.1:36680] mod_wsgi (pid=13914): Failed to exec Python script file '/home/thenya/django_apps/multi_tenancy/multi_tenancy/wsgi.py'.
+[Fri Jul 16 07:26:40.860804 2021] [wsgi:error] [pid 13914:tid 140611832743680] [remote 127.0.0.1:36680] mod_wsgi (pid=13914): Exception occurred processing WSGI script '/home/thenya/django_apps/multi_tenancy/multi_tenancy/wsgi.py'.
+[Fri Jul 16 07:26:40.861189 2021] [wsgi:error] [pid 13914:tid 140611832743680] [remote 127.0.0.1:36680] Traceback (most recent call last):
+[Fri Jul 16 07:26:40.861317 2021] [wsgi:error] [pid 13914:tid 140611832743680] [remote 127.0.0.1:36680]   File "/home/thenya/django_apps/multi_tenancy/multi_tenancy/wsgi.py", line 16, in <module>
+[Fri Jul 16 07:26:40.861342 2021] [wsgi:error] [pid 13914:tid 140611832743680] [remote 127.0.0.1:36680]     application = get_wsgi_application()
+[Fri Jul 16 07:26:40.861374 2021] [wsgi:error] [pid 13914:tid 140611832743680] [remote 127.0.0.1:36680]   File "/home/thenya/Documents/hris/lib/python3.8/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+[Fri Jul 16 07:26:40.861391 2021] [wsgi:error] [pid 13914:tid 140611832743680] [remote 127.0.0.1:36680]     django.setup(set_prefix=False)
+[Fri Jul 16 07:26:40.861419 2021] [wsgi:error] [pid 13914:tid 140611832743680] [remote 127.0.0.1:36680]   File "/home/thenya/Documents/hris/lib/python3.8/site-packages/django/__init__.py", line 24, in setup
+[Fri Jul 16 07:26:40.861435 2021] [wsgi:error] [pid 13914:tid 140611832743680] [remote 127.0.0.1:36680]     apps.populate(settings.INSTALLED_APPS)
+[Fri Jul 16 07:26:40.861464 2021] [wsgi:error] [pid 13914:tid 140611832743680] [remote 127.0.0.1:36680]   File "/home/thenya/Documents/hris/lib/python3.8/site-packages/django/apps/registry.py", line 83, in populate
+[Fri Jul 16 07:26:40.861480 2021] [wsgi:error] [pid 13914:tid 140611832743680] [remote 127.0.0.1:36680]     raise RuntimeError("populate() isn't reentrant")
+[Fri Jul 16 07:26:40.861542 2021] [wsgi:error] [pid 13914:tid 140611832743680] [remote 127.0.0.1:36680] RuntimeError: populate() isn't reentrant
+Exception ignored in: <function Local.__del__ at 0x7fe2bd4dd940>
+Traceback (most recent call last):
+  File "/home/thenya/Documents/hris/lib/python3.8/site-packages/asgiref/local.py", line 96, in __del__
+NameError: name 'TypeError' is not defined
+Exception ignored in: <function BaseEventLoop.__del__ at 0x7f4e705fc160>
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/asyncio/base_events.py", line 654, in __del__
+NameError: name 'ResourceWarning' is not defined
+Exception ignored in: <function Local.__del__ at 0x7f4e70573940>
+Traceback (most recent call last):
+  File "/home/thenya/Documents/hris/lib/python3.8/site-packages/asgiref/local.py", line 96, in __del__
+NameError: name 'TypeError' is not defined
+[Fri Jul 16 07:38:56.869056 2021] [wsgi:error] [pid 16288:tid 140670898124544] [remote 127.0.0.1:39038] Not Found: /favicon.ico
+Exception ignored in: <function BaseEventLoop.__del__ at 0x7ff07de8a160>
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/asyncio/base_events.py", line 654, in __del__
+NameError: name 'ResourceWarning' is not defined
+Exception ignored in: <function Local.__del__ at 0x7ff07de00940>
+Traceback (most recent call last):
+  File "/home/thenya/Documents/hris/lib/python3.8/site-packages/asgiref/local.py", line 96, in __del__
+NameError: name 'TypeError' is not defined
+[Fri Jul 16 07:45:12.299210 2021] [wsgi:error] [pid 17350:tid 140147717207808] [remote 127.0.0.1:41116] Internal Server Error: /
+[Fri Jul 16 07:45:12.299259 2021] [wsgi:error] [pid 17350:tid 140147717207808] [remote 127.0.0.1:41116] Traceback (most recent call last):
+[Fri Jul 16 07:45:12.299265 2021] [wsgi:error] [pid 17350:tid 140147717207808] [remote 127.0.0.1:41116]   File "/home/thenya/Documents/hris/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+[Fri Jul 16 07:45:12.299271 2021] [wsgi:error] [pid 17350:tid 140147717207808] [remote 127.0.0.1:41116]     response = get_response(request)
+[Fri Jul 16 07:45:12.299276 2021] [wsgi:error] [pid 17350:tid 140147717207808] [remote 127.0.0.1:41116]   File "/home/thenya/Documents/hris/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+[Fri Jul 16 07:45:12.299282 2021] [wsgi:error] [pid 17350:tid 140147717207808] [remote 127.0.0.1:41116]     response = wrapped_callback(request, *callback_args, **callback_kwargs)
+[Fri Jul 16 07:45:12.299286 2021] [wsgi:error] [pid 17350:tid 140147717207808] [remote 127.0.0.1:41116]   File "/home/thenya/django_apps/multi_tenancy/client/views.py", line 5, in index
+[Fri Jul 16 07:45:12.299291 2021] [wsgi:error] [pid 17350:tid 140147717207808] [remote 127.0.0.1:41116]     return render(request,'templates/client_view.html')
+[Fri Jul 16 07:45:12.299295 2021] [wsgi:error] [pid 17350:tid 140147717207808] [remote 127.0.0.1:41116]   File "/home/thenya/Documents/hris/lib/python3.8/site-packages/django/shortcuts.py", line 19, in render
+[Fri Jul 16 07:45:12.299300 2021] [wsgi:error] [pid 17350:tid 140147717207808] [remote 127.0.0.1:41116]     content = loader.render_to_string(template_name, context, request, using=using)
+[Fri Jul 16 07:45:12.299304 2021] [wsgi:error] [pid 17350:tid 140147717207808] [remote 127.0.0.1:41116]   File "/home/thenya/Documents/hris/lib/python3.8/site-packages/django/template/loader.py", line 61, in render_to_string
+[Fri Jul 16 07:45:12.299309 2021] [wsgi:error] [pid 17350:tid 140147717207808] [remote 127.0.0.1:41116]     template = get_template(template_name, using=using)
+[Fri Jul 16 07:45:12.299314 2021] [wsgi:error] [pid 17350:tid 140147717207808] [remote 127.0.0.1:41116]   File "/home/thenya/Documents/hris/lib/python3.8/site-packages/django/template/loader.py", line 19, in get_template
+[Fri Jul 16 07:45:12.299319 2021] [wsgi:error] [pid 17350:tid 140147717207808] [remote 127.0.0.1:41116]     raise TemplateDoesNotExist(template_name, chain=chain)
+[Fri Jul 16 07:45:12.299324 2021] [wsgi:error] [pid 17350:tid 140147717207808] [remote 127.0.0.1:41116] django.template.exceptions.TemplateDoesNotExist: templates/client_view.html
+[Fri Jul 16 07:45:31.950141 2021] [wsgi:error] [pid 17350:tid 140147599693568] [remote 127.0.0.1:41208] Internal Server Error: /
+[Fri Jul 16 07:45:31.950192 2021] [wsgi:error] [pid 17350:tid 140147599693568] [remote 127.0.0.1:41208] Traceback (most recent call last):
+[Fri Jul 16 07:45:31.950198 2021] [wsgi:error] [pid 17350:tid 140147599693568] [remote 127.0.0.1:41208]   File "/home/thenya/Documents/hris/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+[Fri Jul 16 07:45:31.950203 2021] [wsgi:error] [pid 17350:tid 140147599693568] [remote 127.0.0.1:41208]     response = get_response(request)
+[Fri Jul 16 07:45:31.950207 2021] [wsgi:error] [pid 17350:tid 140147599693568] [remote 127.0.0.1:41208]   File "/home/thenya/Documents/hris/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+[Fri Jul 16 07:45:31.950212 2021] [wsgi:error] [pid 17350:tid 140147599693568] [remote 127.0.0.1:41208]     response = wrapped_callback(request, *callback_args, **callback_kwargs)
+[Fri Jul 16 07:45:31.950216 2021] [wsgi:error] [pid 17350:tid 140147599693568] [remote 127.0.0.1:41208]   File "/home/thenya/django_apps/multi_tenancy/client/views.py", line 5, in index
+[Fri Jul 16 07:45:31.950220 2021] [wsgi:error] [pid 17350:tid 140147599693568] [remote 127.0.0.1:41208]     return render(request,'client_view.html')
+[Fri Jul 16 07:45:31.950224 2021] [wsgi:error] [pid 17350:tid 140147599693568] [remote 127.0.0.1:41208]   File "/home/thenya/Documents/hris/lib/python3.8/site-packages/django/shortcuts.py", line 19, in render
+[Fri Jul 16 07:45:31.950229 2021] [wsgi:error] [pid 17350:tid 140147599693568] [remote 127.0.0.1:41208]     content = loader.render_to_string(template_name, context, request, using=using)
+[Fri Jul 16 07:45:31.950233 2021] [wsgi:error] [pid 17350:tid 140147599693568] [remote 127.0.0.1:41208]   File "/home/thenya/Documents/hris/lib/python3.8/site-packages/django/template/loader.py", line 61, in render_to_string
+[Fri Jul 16 07:45:31.950238 2021] [wsgi:error] [pid 17350:tid 140147599693568] [remote 127.0.0.1:41208]     template = get_template(template_name, using=using)
+[Fri Jul 16 07:45:31.950242 2021] [wsgi:error] [pid 17350:tid 140147599693568] [remote 127.0.0.1:41208]   File "/home/thenya/Documents/hris/lib/python3.8/site-packages/django/template/loader.py", line 19, in get_template
+[Fri Jul 16 07:45:31.950247 2021] [wsgi:error] [pid 17350:tid 140147599693568] [remote 127.0.0.1:41208]     raise TemplateDoesNotExist(template_name, chain=chain)
+[Fri Jul 16 07:45:31.950252 2021] [wsgi:error] [pid 17350:tid 140147599693568] [remote 127.0.0.1:41208] django.template.exceptions.TemplateDoesNotExist: templates/client_view.html
+[Fri Jul 16 07:45:33.022326 2021] [wsgi:error] [pid 17350:tid 140147717207808] [remote 127.0.0.1:41214] Internal Server Error: /
+[Fri Jul 16 07:45:33.022365 2021] [wsgi:error] [pid 17350:tid 140147717207808] [remote 127.0.0.1:41214] Traceback (most recent call last):
+[Fri Jul 16 07:45:33.022369 2021] [wsgi:error] [pid 17350:tid 140147717207808] [remote 127.0.0.1:41214]   File "/home/thenya/Documents/hris/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+[Fri Jul 16 07:45:33.022373 2021] [wsgi:error] [pid 17350:tid 140147717207808] [remote 127.0.0.1:41214]     response = get_response(request)
+[Fri Jul 16 07:45:33.022376 2021] [wsgi:error] [pid 17350:tid 140147717207808] [remote 127.0.0.1:41214]   File "/home/thenya/Documents/hris/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+[Fri Jul 16 07:45:33.022380 2021] [wsgi:error] [pid 17350:tid 140147717207808] [remote 127.0.0.1:41214]     response = wrapped_callback(request, *callback_args, **callback_kwargs)
+[Fri Jul 16 07:45:33.022383 2021] [wsgi:error] [pid 17350:tid 140147717207808] [remote 127.0.0.1:41214]   File "/home/thenya/django_apps/multi_tenancy/client/views.py", line 5, in index
+[Fri Jul 16 07:45:33.022387 2021] [wsgi:error] [pid 17350:tid 140147717207808] [remote 127.0.0.1:41214]     return render(request,'client_view.html')
+[Fri Jul 16 07:45:33.022390 2021] [wsgi:error] [pid 17350:tid 140147717207808] [remote 127.0.0.1:41214]   File "/home/thenya/Documents/hris/lib/python3.8/site-packages/django/shortcuts.py", line 19, in render
+[Fri Jul 16 07:45:33.022414 2021] [wsgi:error] [pid 17350:tid 140147717207808] [remote 127.0.0.1:41214]     content = loader.render_to_string(template_name, context, request, using=using)
+[Fri Jul 16 07:45:33.022418 2021] [wsgi:error] [pid 17350:tid 140147717207808] [remote 127.0.0.1:41214]   File "/home/thenya/Documents/hris/lib/python3.8/site-packages/django/template/loader.py", line 61, in render_to_string
+[Fri Jul 16 07:45:33.022421 2021] [wsgi:error] [pid 17350:tid 140147717207808] [remote 127.0.0.1:41214]     template = get_template(template_name, using=using)
+[Fri Jul 16 07:45:33.022425 2021] [wsgi:error] [pid 17350:tid 140147717207808] [remote 127.0.0.1:41214]   File "/home/thenya/Documents/hris/lib/python3.8/site-packages/django/template/loader.py", line 19, in get_template
+[Fri Jul 16 07:45:33.022428 2021] [wsgi:error] [pid 17350:tid 140147717207808] [remote 127.0.0.1:41214]     raise TemplateDoesNotExist(template_name, chain=chain)
+[Fri Jul 16 07:45:33.022431 2021] [wsgi:error] [pid 17350:tid 140147717207808] [remote 127.0.0.1:41214] django.template.exceptions.TemplateDoesNotExist: templates/client_view.html
+Exception ignored in: <function BaseEventLoop.__del__ at 0x7f76a6e44160>
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/asyncio/base_events.py", line 654, in __del__
+NameError: name 'ResourceWarning' is not defined
+Exception ignored in: <function Local.__del__ at 0x7f76a6dbb940>
+Traceback (most recent call last):
+  File "/home/thenya/Documents/hris/lib/python3.8/site-packages/asgiref/local.py", line 96, in __del__
+NameError: name 'TypeError' is not defined
+Exception ignored in: <function Local.__del__ at 0x7f76a6dbb940>
+Traceback (most recent call last):
+  File "/home/thenya/Documents/hris/lib/python3.8/site-packages/asgiref/local.py", line 96, in __del__
+NameError: name 'TypeError' is not defined
+Exception ignored in: <function BaseEventLoop.__del__ at 0x7fbfe99b2160>
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/asyncio/base_events.py", line 654, in __del__
+NameError: name 'ResourceWarning' is not defined
+Exception ignored in: <function Local.__del__ at 0x7fbfe9928940>
+Traceback (most recent call last):
+  File "/home/thenya/Documents/hris/lib/python3.8/site-packages/asgiref/local.py", line 96, in __del__
+NameError: name 'TypeError' is not defined
+[Fri Jul 16 07:46:24.891071 2021] [wsgi:error] [pid 17846:tid 139828801001216] [remote 127.0.0.1:41380] Not Found: /favicon.ico
+Exception ignored in: <function BaseEventLoop.__del__ at 0x7f2c6d024160>
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/asyncio/base_events.py", line 654, in __del__
+NameError: name 'ResourceWarning' is not defined
+Exception ignored in: <function Local.__del__ at 0x7f2c6cf9a940>
+Traceback (most recent call last):
+  File "/home/thenya/Documents/hris/lib/python3.8/site-packages/asgiref/local.py", line 96, in __del__
+NameError: name 'TypeError' is not defined
+[Fri Jul 16 07:48:51.853768 2021] [wsgi:error] [pid 18297:tid 140196499031808] [remote 127.0.0.1:41882] Not Found: /
